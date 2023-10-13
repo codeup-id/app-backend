@@ -25,8 +25,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - name: Pack bundle
-        run: pnpm run bundle-pack
+      - name: Pack app
+        run: pnpm run pack
 
       - name: Setup QEMU
         uses: docker/setup-qemu-action@v2

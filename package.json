@@ -11,7 +11,7 @@
     "snapshot-prod": "directus schema snapshot snapshot.yml",
     "bundle-dev": "pnpm -r -C bundle dev",
     "bundle-build": "pnpm -r -C bundle build",
-    "bundle-pack": "mkdir -p dist && cp package.json dist/ && pnpm bundle-build && pnpm -F @upik/directus-extension-codeup exec pnpm pack --pack-destination ../dist"
+    "pack": "pnpm bundle-build && node pack.js"
   },
   "workspaces": [
     "./bundle"
