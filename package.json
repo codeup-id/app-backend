@@ -1,0 +1,44 @@
+{
+  "name": "app-backend",
+  "private": true,
+  "version": "2.5.1",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "directus bootstrap && directus start",
+    "snapshot-prod": "directus schema snapshot snapshot.yml",
+    "bundle-dev": "pnpm -r -C bundle dev",
+    "bundle-build": "pnpm -r -C bundle build",
+    "bundle-pack": "pnpm bundle-build && pnpm -F @upik/directus-extension-codeup exec pnpm pack --pack-destination ../dist"
+  },
+  "workspaces": [
+    "./bundle"
+  ],
+  "dependencies": {
+    "@upik/directus-extension-codeup": "workspace:*",
+    "@keyv/redis": "2.5.8",
+    "directus": "10.6.3",
+    "nodemailer-mailgun-transport": "2.1.5",
+    "nodemailer-sendgrid": "1.0.3",
+    "pg": "8.11.0",
+    "tedious": "16.1.0"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "10.1.11",
+    "@types/node": "^20.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.11.0",
+    "lodash": "^4.17.21",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4"
+  }
+}
