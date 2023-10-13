@@ -5,7 +5,7 @@ on:
 
 env:
   GHCR_IMAGE: ghcr.io/${{ github.repository }}
-  DOCKERHUB_IMAGE: upik/codeup-app-backend
+  DOCKERHUB_IMAGE: upiksaleh/codeup-app-backend
 
 jobs:
   build:
