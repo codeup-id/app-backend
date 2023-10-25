@@ -2,7 +2,7 @@
   "name": "@upik/directus-extension-codeup",
   "version": "1.0.0",
   "directus:extension": {
-    "host": "^10.6.3",
+    "host": "^10.7.0",
     "type": "bundle",
     "path": {
       "app": "dist/app.js",
@@ -35,9 +35,9 @@
     "add": "directus-extension add"
   },
   "devDependencies": {
-    "@directus/extensions-sdk": "10.1.11",
-    "@types/node": "^20.8.5",
-    "typescript": "^5.2.2",
-    "vue": "^3.3.4"
+    "@directus/extensions-sdk": "10.1.13",
+    "@types/node": "^20.8.6",
+    "pluralize": "^8.0.0",
+    "typescript": "^5.2.2"
   }
 }

@@ -19,7 +19,7 @@
   "dependencies": {
     "@upik/directus-extension-codeup": "workspace:*",
     "@keyv/redis": "2.5.8",
-    "directus": "10.6.3",
+    "directus": "10.7.0",
     "nodemailer-mailgun-transport": "2.1.5",
     "nodemailer-sendgrid": "1.0.3",
     "pg": "8.11.0",
